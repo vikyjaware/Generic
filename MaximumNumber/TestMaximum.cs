@@ -10,7 +10,7 @@ namespace MaximumNumber
     {
         public int MaximumIntNumberCheck(int firstNumber, int secondNumber, int thirdNumber)
         {
-            if (firstNumber.CompareTo(secondNumber) > 0 && secondNumber.CompareTo(thirdNumber) > 0)
+            if (firstNumber.CompareTo(secondNumber) > 0 && firstNumber.CompareTo(thirdNumber) > 0)
             {
                 return firstNumber;
             }
