@@ -8,19 +8,19 @@ namespace MaximumNumber
 {
     public class TestMaximum
     {
-        public double MaximumDoubleNumberCheck(double firstNumber, double secondNumber, double thirdNumber)
+        public string MaximumCheck(string first, string second, string third)
         {
-            if (firstNumber.CompareTo(secondNumber) > 0 && firstNumber.CompareTo(thirdNumber) > 0)
+            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
             {
-                return firstNumber;
+                return first;
             }
-            if (secondNumber.CompareTo(thirdNumber) > 0 && secondNumber.CompareTo(firstNumber) > 0)
+            if (second.CompareTo(third) > 0 && second.CompareTo(first) > 0)
             {
-                return secondNumber;
+                return second;
             }
             else
             {
-                return thirdNumber;
+                return third;
             }
         }
     }
