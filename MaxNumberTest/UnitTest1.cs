@@ -6,7 +6,7 @@ namespace MaxNumberTest
     public class Tests
     {
         [Test]
-        public void GivenIntegerValuesFistPositionMax_WhenCheck__ShouldReturnMaxNum()
+        public void GivenIntegerValuesFistPositionMax_WhenCheck__ShouldReturnMaxNumber()
         {
             TestMaximum maximum = new TestMaximum();
             int max = maximum.MaximumIntNumberCheck(3, 2, 1);
@@ -14,14 +14,14 @@ namespace MaxNumberTest
         }
 
         [Test]
-        public void GivenIntegerValuesSecondPositionMax_WhenCheck_ShouldReturnMaxNum()
+        public void GivenIntegerValuesSecondPositionMax_WhenCheck_ShouldReturnMaxNumber()
         {
             TestMaximum maximum = new TestMaximum();
             int max = maximum.MaximumIntNumberCheck(1, 3, 2);
             Assert.AreEqual(3, max);
         }
         [Test]
-        public void GivenIntegerValuesThirdPositionMax_WhenCheck_ShouldReturnMaxNum()
+        public void GivenIntegerValuesThirdPositionMax_WhenCheck_ShouldReturnMaxNumber()
         {
             TestMaximum maximum = new TestMaximum();
             int max = maximum.MaximumIntNumberCheck(1, 2, 3);
