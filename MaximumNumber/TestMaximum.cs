@@ -8,7 +8,11 @@ namespace MaximumNumber
 {
     public class TestMaximum
     {
+<<<<<<< HEAD
         public double MaximumFloatNumberCheck(double first, double second, double third)
+=======
+        public double MaximumIntNumberCheck(double firstNumber, double secondNumber, double thirdNumber)
+>>>>>>> UC2-FloatMaximumNumber
         {
             if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
             {
