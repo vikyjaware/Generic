@@ -6,26 +6,26 @@ namespace MaxNumberTest
     public class Tests
     {
         [Test]
-        public void GivenIntegerValuesFistPositionMax_WhenCheck__ShouldReturnMaxNum()
+        public void GivenStringValuesFistPositionMax_WhenCheck__ShouldReturnMaxNum()
         {
             TestMaximum maximum = new TestMaximum();
-            int max = maximum.MaximumIntNumberCheck(3, 2, 1);
-            Assert.AreEqual(3, max);
+            string max = maximum.MaximumCheck("Peach", "Apple", "Banana");
+            Assert.AreEqual("Peach", max);
         }
 
         [Test]
-        public void GivenIntegerValuesSecondPositionMax_WhenCheck_ShouldReturnMaxNum()
+        public void GivenStringValuesSecondPositionMax_WhenCheck_ShouldReturnMaxNum()
         {
             TestMaximum maximum = new TestMaximum();
-            int max = maximum.MaximumIntNumberCheck(1, 3, 2);
-            Assert.AreEqual(3, max);
+            string max = maximum.MaximumCheck("Banana", "Peach", "Apple");
+            Assert.AreEqual("Peach", max);
         }
         [Test]
-        public void GivenIntegerValuesThirdPositionMax_WhenCheck_ShouldReturnMaxNum()
+        public void GivenStringValuesThirdPositionMax_WhenCheck_ShouldReturnMaxNum()
         {
             TestMaximum maximum = new TestMaximum();
-            int max = maximum.MaximumIntNumberCheck(1, 2, 3);
-            Assert.AreEqual(3, max);
+            string max = maximum.MaximumCheck("Apple", "Banana", "Peach");
+            Assert.AreEqual("Peach", max);
         }
     }
 }
