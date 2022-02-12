@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MaximumNumber
 {
-    public class TestMaximum
+    public class TestMaximum<T> where T: IComparable
     {
-        public string MaximumCheck(string first, string second, string third)
+        public T MaximumCheck (T first, T second, T third)
         {
             if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
             {
