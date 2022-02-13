@@ -10,7 +10,7 @@ namespace MaximumNumber
     {
         static void Main(string[] args)
         {
-
+            Console.WriteLine("Welcome to Generic program! ");
         }
     }
 }
