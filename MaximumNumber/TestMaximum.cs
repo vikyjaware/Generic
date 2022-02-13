@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MaximumNumber
 {
-    public class TestMaximum<T> where T: IComparable
+    public class TestMaximum<T> whereT: IComparable
     {
         public T MaximumCheck (T first, T second, T third)
         {
