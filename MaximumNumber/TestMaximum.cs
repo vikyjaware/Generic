@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,20 +9,24 @@ namespace MaximumNumber
 {
     public class TestMaximum<T> where T: IComparable
     {
-        public T MaximumCheck (T first, T second, T third)
+        public T MaximumCheck (T first, T second, T third,[Optional] T fourth)
 
         {
-            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
+            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0  && first.CompareTo(fourth) > 0 )
             {
                 return first;
             }
-            if (second.CompareTo(third) > 0 && second.CompareTo(first) > 0)
+            if (second.CompareTo(third) > 0 && second.CompareTo(first) > 0 && second.CompareTo(fourth) > 0)
             {
                 return second;
             }
-            else
+            if (third.CompareTo(second) > 0 && third.CompareTo(first) > 0 && third.CompareTo(fourth) > 0)
             {
                 return third;
+            }
+            else
+            {
+                return fourth;
             }
         }
     }
